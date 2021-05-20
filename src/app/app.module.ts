@@ -9,6 +9,7 @@ import { SurpionComponent } from './pages/surpion/surpion.component';
 import { SuperpionComponent } from './pages/superpion/superpion.component';
 import { HeaderComponent } from './components/partials/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -17,14 +18,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MorpionComponent,
     SurpionComponent,
     SuperpionComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
