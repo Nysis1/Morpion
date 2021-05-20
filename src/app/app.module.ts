@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { MorpionComponent } from './pages/morpion/morpion.component';
 import { SurpionComponent } from './pages/surpion/surpion.component';
 import { SuperpionComponent } from './pages/superpion/superpion.component';
+import { HeaderComponent } from './components/partials/header/header.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SuperpionComponent } from './pages/superpion/superpion.component';
     HomeComponent,
     MorpionComponent,
     SurpionComponent,
-    SuperpionComponent
+    SuperpionComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

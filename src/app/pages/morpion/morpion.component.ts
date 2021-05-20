@@ -3,13 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-morpion',
   templateUrl: './morpion.component.html',
-  styleUrls: ['./morpion.component.sass']
+  styleUrls: ['./morpion.component.scss'],
 })
 export class MorpionComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

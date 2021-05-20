@@ -3,13 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-surpion',
   templateUrl: './surpion.component.html',
-  styleUrls: ['./surpion.component.sass']
+  styleUrls: ['./surpion.component.scss'],
 })
 export class SurpionComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

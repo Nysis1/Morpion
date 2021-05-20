@@ -11,15 +11,15 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: '/morpion',
+    path: 'morpion',
     component: MorpionComponent,
   },
   {
-    path: '/superpion',
+    path: 'superpion',
     component: SuperpionComponent,
   },
   {
-    path: '/surpion',
+    path: 'surpion',
     component: SurpionComponent,
   },
 ];
