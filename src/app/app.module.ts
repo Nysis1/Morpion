@@ -8,6 +8,7 @@ import { MorpionComponent } from './pages/morpion/morpion.component';
 import { SurpionComponent } from './pages/surpion/surpion.component';
 import { SuperpionComponent } from './pages/superpion/superpion.component';
 import { HeaderComponent } from './components/partials/header/header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HeaderComponent } from './components/partials/header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
