@@ -1,13 +1,27 @@
-<mat-card></mat-card>
+<section>
+    <div class="example-label">Raised</div>
+    <div class="example-button-row">
+      <button mat-raised-button>Basic</button>
+      <button mat-raised-button color="primary">Primary</button>
+      <button mat-raised-button color="accent">Accent</button>
+      <button mat-raised-button color="warn">Warn</button>
+      <button mat-raised-button disabled>Disabled</button>
+      <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+    </div>
+  </section>
+  
 
-<button type="button" (click)="btnClic(0)"> {{ text[0] }}</button>
-<button type="button" (click)="btnClic(1)" >{{ text[1] }}</button>
-<button type="button" (click)="btnClic(2)" >{{ text[2] }}</button>
-<button type="button" (click)="btnClic(3)" >{{ text[3] }}</button>
-<button type="button" (click)="btnClic(4)" >{{ text[4] }}</button>
-<button type="button" (click)="btnClic(5)" >{{ text[5] }}</button>
-<button type="button" (click)="btnClic(6)" >{{ text[6] }}</button>
-<button type="button" (click)="btnClic(7)" >{{ text[7] }}</button>
-<button type="button" (click)="btnClic(8)" >{{ text[8] }}</button>
 
-<p></p>
+<mat-card>
+    <button type="button" (click)="btnClic(0)" > {{ text[0] }} </button>
+    <button type="button" (click)="btnClic(1)" > {{ text[1] }} </button>
+    <button type="button" (click)="btnClic(2)" > {{ text[2] }} </button>
+    <button type="button" (click)="btnClic(3)" > {{ text[3] }} </button>
+    <button type="button" (click)="btnClic(4)" > {{ text[4] }} </button>
+    <button type="button" (click)="btnClic(5)" > {{ text[5] }} </button>
+    <button type="button" (click)="btnClic(6)" > {{ text[6] }} </button>
+    <button type="button" (click)="btnClic(7)" > {{ text[7] }} </button>
+    <button type="button" (click)="btnClic(8)" > {{ text[8] }} </button>
+</mat-card>
+
+
