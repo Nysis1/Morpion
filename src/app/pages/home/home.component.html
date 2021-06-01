@@ -1,9 +1,98 @@
-<div class="container">
-  <div class="btnContainer">
-    <button type="button" (click)="btnClick('morpion')">test</button>
-    <button type="button" (click)="btnClick('morpion')"></button>
-    <button type="button" (click)="btnClick('morpion')"></button>
-    <button type="button" (click)="btnClick('morpion')"></button>
+<div class="homeContainer">
+  <div class="container">
+    <div [style.height]="'auto'" class="carouselContainer">
+      <mat-carousel
+        timings="800ms ease"
+        [autoplay]="true"
+        interval="10000"
+        color="accent"
+        proportion="20"
+        slides="4"
+        [loop]="false"
+        [hideArrows]="false"
+        [hideIndicators]="false"
+        [useKeyboard]="true"
+      >
+        <mat-carousel-slide
+          #matCarouselSlide
+          *ngFor="let slide of slides; let i = index"
+          [image]="slide.image"
+          [hideOverlay]="true"
+        >
+        </mat-carousel-slide>
+      </mat-carousel>
+    </div>
+    <mat-grid-list
+      [cols]="breakpoint"
+      rowHeight="2:2.4"
+      (window:resize)="onResize($event)"
+    >
+      <mat-grid-tile>
+        <mat-card>
+          <h2>Morpion</h2>
+          <div class="gameImgContainer">
+            <img
+              class="gameImg"
+              src="../../../assets/morpion.jpg"
+              alt="morpion"
+            />
+          </div>
+          <div class="btnContainer">
+            <button
+              class="mbtn"
+              mat-raised-button
+              color
+              (click)="btnClick('morpion')"
+            >
+              play
+            </button>
+          </div>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card>
+          <h2>Siuperpion</h2>
+          <div class="gameImgContainer">
+            <img
+              class="gameImg"
+              src="../../../assets/siuperpion.jpg"
+              alt="morpion"
+            />
+          </div>
+          <div class="btnContainer">
+            <button
+              class="mbtn"
+              mat-raised-button
+              color
+              (click)="btnClick('superpion')"
+            >
+              play
+            </button>
+          </div>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card>
+          <h2>Surpion</h2>
+          <div class="gameImgContainer">
+            <img
+              class="gameImg"
+              src="../../../assets/surpion.jpg"
+              alt="morpion"
+            />
+          </div>
+          <div class="btnContainer">
+            <button
+              class="mbtn"
+              mat-raised-button
+              color
+              (click)="btnClick('surpion')"
+            >
+              play
+            </button>
+          </div>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
   </div>
-  <mat-card class="example-card"> </mat-card>
 </div>
