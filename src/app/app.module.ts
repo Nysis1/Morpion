@@ -12,9 +12,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from "@angular/material/button";
-
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 @NgModule({
   declarations: [
@@ -33,6 +33,8 @@ import { MatButtonModule } from "@angular/material/button";
     MatCheckboxModule,
     MatIconModule,
     MatButtonModule,
+    MatGridListModule,
+    MatCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
